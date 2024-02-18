@@ -1,5 +1,5 @@
 {
-    "name": "reactive-dom",
+    "name": "active-dom",
     "version": "1.0.0",
     "description": "Utility to render DOM efficiently.",
     "main": "index.js",
