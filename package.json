@@ -1,6 +1,6 @@
 {
     "name": "active-dom",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Utility to render DOM efficiently.",
     "main": "index.js",
     "scripts": {
@@ -9,7 +9,7 @@
     "keywords": [
         "reactive-dom"
     ],
-    "git repository": "https://github.com/sonu-nigam/reactive-dom.git",
+    "git repository": "https://github.com/sonu-nigam/active-dom.git",
     "author": "Sonu Nigam",
     "license": "ISC"
 }

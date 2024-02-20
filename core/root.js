@@ -133,8 +133,13 @@ export class Root {
             if (props[prop] === currentElement[prop]) continue;
             if (prop === "style") {
                 Object.assign(currentElement[prop], props[prop])
-            } else {
+            } else if (prop === "className" 
+                || prop.startsWith("on") 
+                || prop.startsWith("$")
+            ) {
                 currentElement[prop] = props[prop];
+            } else {
+                currentElement.setAttribue(prop, props[prop])
             }
         }
 

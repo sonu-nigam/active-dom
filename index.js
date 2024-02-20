@@ -8,7 +8,7 @@
     * @property {string} [*]
     */
 
-import { Root } from "./core/root";
+import { Root } from "./core/root.js";
 
 export default class Renderer {
     /**
