@@ -125,7 +125,7 @@ export class Root {
             }
             currentElement = newNode
         }
-
+    
         const cacheProps = currentElement.$$cacheProps || []
         const newProps = Object.keys(props)
         const allProps = new Set([...cacheProps, ...newProps])
@@ -133,13 +133,12 @@ export class Root {
             if (props[prop] === currentElement[prop]) continue;
             if (prop === "style") {
                 Object.assign(currentElement[prop], props[prop])
-            } else if (prop === "className" 
-                || prop.startsWith("on") 
-                || prop.startsWith("$")
-            ) {
+            } else if (prop === "className" || prop.startsWith("on")) {
                 currentElement[prop] = props[prop];
+            } else if (prop.startsWith("$")) {
+                currentElement[prop.substring(1)] = props[prop]
             } else {
-                currentElement.setAttribue(prop, props[prop])
+                currentElement.setAttribute(prop, props[prop])
             }
         }
 

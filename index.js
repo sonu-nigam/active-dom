@@ -2,9 +2,8 @@
  * @template T
  * @typedef {keyof HTMLElementTagNameMap | ( new () => T )} Element
  */
-
 /**
-    * @typedef {Partial<HTMLElement | HTMLAnchorElement | HTMLBRElement | HTMLImageElement>} HtmlProps
+    * @typedef {Partial<HTMLElement | HTMLAnchorElement | HTMLBRElement | HTMLImageElement> } HtmlProps
     * @property {string} [*]
     */
 
